@@ -1,4 +1,4 @@
 ========================
 
 #终端上显示二维码
-![example](file://media/863474971.png)
+![example](https://github.com/wszxl516/qrconde/blob/master/example.png)
