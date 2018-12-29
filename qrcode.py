@@ -5,7 +5,7 @@ import sys
 
 class DrawConsole:
     def __init__(self, image_file, resize=(100, 100)):
-        self._pixel = '\x1b[38;2;{}m\x1b[48;2;{}m\u2588\x1b[0m'
+        self._pixel = '\x1b[48;2;{}m\x1b[38;2;{}m\u2584\x1b[0m'
         self.image = Image.open(image_file)
         self.image = self.image.resize(resize)
         self.width, self.height = self.image.size
