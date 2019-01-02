@@ -19,10 +19,10 @@ class DrawConsole:
             for w in range(0, self.width):
                 if self.true_color:
                     r, g, b, _ = self.image.getpixel((w, h))
-                    r1, g1, b1, _ = self.image.getpixel((w, h))
+                    r1, g1, b1, _ = self.image.getpixel((w, h+1))
                 else:
                     r, g, b = self.image.getpixel((w, h))
-                    r1, g1, b1 = self.image.getpixel((w, h))
+                    r1, g1, b1 = self.image.getpixel((w, h+1))
                 line += self._pixel.format('{};{};{}'.format(r, g, b), '{};{};{}'.format(r1, g1, b1))
             lines += line + '\n\r'
         return lines
